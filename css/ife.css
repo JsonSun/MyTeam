@@ -1,0 +1,161 @@
+    	/* 页面整体 */	
+		html,body{
+			height: 100%;
+			overflow: hidden;
+		}
+		html{font-size:62.5%;}
+		body{font-size: 1.6rem;}
+
+		#container,.section{
+			height: 100%;
+			position: relative;
+		}
+		#section0,
+		#section1,
+		#section2,
+		#section3{
+			background-color: #000;
+			background-size: cover;
+			background-position: 50% 50%;
+		}
+		#section0{
+			background-image: url("../images/introduce.jpg");
+			color: #fff;
+			text-shadow:1px 1px 1px #333;
+			background-size: 100% 100%;
+		}
+		#section1{
+			color: #fff;
+			text-shadow:1px 1px 1px #333;
+			background-image: url("../images/book.jpg");
+		}
+		#section2{
+			background-image: url("../images/design.jpg");
+			color: #fff;
+			text-shadow:1px 1px 1px #666;
+		}
+		#section3{
+			color: #008283;
+			background-image: url("../images/project.jpg");
+			text-shadow:1px 1px 1px #fff;
+		}
+
+		.left{
+			float: left;
+		}
+
+		/* 页面一 */	
+		#section0 {
+			position: relative;
+		}
+		#section0 .intro0{
+			position: absolute;
+			top:10%;
+			left:15%; 
+		}
+		#section0 .intro1{
+			position: absolute;
+			top:48%;
+			left:35%; 
+		}
+		#section0 .intro2{position: absolute;
+			top:70%;
+			right:15%;
+		}
+		/* 页面一 通用 */
+		#section0 h2{
+			text-align: center;
+			padding-bottom: 2px;
+			 font-size: 1.8rem;
+			 font-weight: bold;
+			 color:#6699CC;
+			 border-bottom: 1px solid #e7bcd8;
+		}
+		#section0 p{
+			color:#c0dee8;
+		}
+		#section0 >div p:last-child{
+			text-align: center;
+		}
+		/* 页面二 */
+		#section1 >div{position: absolute;width: 40%;min-width: 300px; height:100px; padding: 10px;background: linear-gradient(#0077C7, #097DE0);text-align: center;}
+		#section1 >div h2{transition: all 1s ease ;-webkit-transition:all 1s ease;}
+		#section1 >div:hover h2{background-color: #0077C7;color:#00CC00;  }
+		#section1 .intro0{top: 30%;left:7%;}
+		#section1 .intro1{top: 30%;left:49.5%;}
+		#section1 .intro2{top:50%;left: 7%;}
+		#section1 .intro3{top: 50%;left:49.5%;}
+	    #section1 h2{margin: 0 auto 10px; width: 50px;height: 50px;border-radius: 25px;font-size: 1.8rem; line-height: 50px;background-color:#3399CC;color: #33FFFF;}
+		/* 页面三 */
+		#section2 .person-wrap{margin-top: 20px;}
+		#section2 h1{margin-top: 40px; font-size:3rem;text-align: center;font-weight: bold;color: #000033;}
+		#section2  .person{float: left;margin-left:6%;margin-bottom:50px;min-height: 140px;  width:25%;overflow: hidden;transition: all 1s ease ;-webkit-transition:all 1s ease; border: 1px solid #00CC33;border-radius: 5px;box-shadow: 8px 8px 5px #888888;}
+		#section2  .person:hover{transform:scale(1.5);-webkit-transform:scale(1.2); }
+		#section2  .person h2{text-align: center;font-size: 1.8rem; padding:5px 0;border-bottom: 1px dotted #00CC00;}
+		#section2  .person p{padding: 1% 5%;}
+		#section2  .person p:last-child{padding-top: 10px;}
+		/* 动画 */
+		#section0 .intro0{
+		animation: move0 ease 4s;
+		-moz-animation:move0 ease 4s;
+		-webkit-animation:move0 ease 4s;
+		}
+		@keyframes move0{
+			0%   {left:0%;}
+			100% {left: 15%;}
+		}
+		@-webkit-keyframes move0{
+			0%   {left:0%;}
+			100% {left: 15%;}
+		}
+		#section0 .intro1{
+		animation: move1 ease 4s;
+		-moz-animation:move1 ease  4s;
+		-webkit-animation:move1 ease 4s;
+		}
+		@keyframes move1{
+			0%   {top:20%;}
+			100% {top:48%;;}
+		}
+		@-webkit-keyframes move1{
+			0%   {top:20%;}
+			100% {top:48%;;}
+		}
+		#section0 .intro2{
+		animation: move2 ease 4s;
+		-moz-animation:move2 ease 4s;
+		-webkit-animation:move2 ease 4s;
+		}
+		@keyframes move2{
+			0%   {right:0;}
+			100% {right:15%;;}
+		}
+		@-webkit-keyframes move1{
+			0%   {right:0;}
+			100% {right:15%;}
+		}
+		/* 轮播按钮 */
+		#pages{
+			position:fixed;
+			right: 10px;
+			top: 50%;
+			list-style: none;
+		}
+		#pages li{
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: #fff;
+			margin: 0 0 10px 5px;
+		}
+		#pages li.active{
+			width:14px;
+			height:14px;
+			border: 2px solid #00CCFF;
+			background: none;
+			margin-left: 0;
+		}
+
+
+
+		
