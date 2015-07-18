@@ -1,0 +1,112 @@
+@charset "utf-8";
+body{
+	background-color: #fff;
+	width: 100%;
+}
+
+@bgcolor:#fff;
+@fontZ20:20px;
+@fontZ12:12px;
+@marginTop_wrap:20px;
+@marginLeft_wrap:100px;
+@divH:500px;
+@lineHead:60px;
+
+header{
+	/*position: fixed;*/
+	width: 100%;
+	height: 20%;
+	background-color: #000;	
+	list-style: none;
+	font-size: @fontZ20;
+	height: @lineHead;
+	line-height: @lineHead;
+	padding: 2px 0;
+	ul{
+		margin: 0 auto;
+		text-align: center;
+		li{
+			
+			background-color: #000;
+			border: 1px solid transparent;
+			color: #fff;
+			margin: 0 100px;
+			display: inline-block;
+			transition:background-color 2s ease,
+						color 1.5s ease;
+		}
+		li:hover{
+			background-color: #eee;
+			border: 1px solid #eee;
+			border-radius: 10px;
+			color: #00e;
+			margin: 0 100px;
+			display: inline-block;
+		}
+	}
+}
+	.aside{
+    	width: 200px;
+		height: @divH;
+		background-color: @bgcolor;
+		margin-top: @marginTop_wrap;
+		margin-left: @marginLeft_wrap;
+		display: inline-block;
+
+		div{
+			border-top: 1px solid #f2f2f2;
+		}
+  
+		h2{
+		    margin: 5px 0;
+		    padding: 0;
+		    position: relative;
+			a{
+			    color: #000;
+			    display: block;
+			    font-size: @fontZ20;
+			    margin: 0;
+			    padding: 10px 10px;
+			    text-decoration: none;
+			  }
+		  }
+
+		  	p{
+			  	@padding48:48px;
+			  	font-size: @fontZ20;
+
+			  	border-top: 1px solid #f2f2f2;
+			    margin: 0;
+			    height: 0;
+			    overflow: hidden;
+			    padding: 0 10px 0 @padding48;
+			    -moz-transition:height 0.5s ease-in;
+			    -webkit-transition:height 0.5s ease-in;
+			    -o-transition:height 0.5s ease-in;
+			    transition:height 0.5s ease-in;
+		  	}
+
+		 :target p{
+		    height: 100px;
+		    overflow: auto;
+		  }
+	}
+
+footer{
+	width: 100%;
+	height: 20%;
+	background-color: #000;
+	color: #fff;
+	list-style: none;
+	font-size: @fontZ12;
+	height: @lineHead;
+	line-height: @lineHead;
+	ul{
+		margin: 0 auto;
+		text-align: center;
+		li{
+			margin: 0 100px;
+			display: inline-block;
+		}
+	}
+}
