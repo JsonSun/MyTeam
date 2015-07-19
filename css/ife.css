@@ -94,6 +94,7 @@
 		#section2  .person h2{text-align: center;font-size: 1.8rem; padding:5px 0;border-bottom: 1px dotted #00CC00;}
 		#section2  .person p{padding: 1% 5%;}
 		#section2  .person p:last-child{padding-top: 10px;}
+		#section2 .person p:last-child a{color: #fff;}
 		/* 动画 */
 		#section0 .intro0{
 		animation: move0 ease 4s;
